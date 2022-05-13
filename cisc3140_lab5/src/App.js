@@ -1,26 +1,34 @@
 import './App.css';
 import TableContainer from "./TableContainer"
-function App() {
+function App(props) {
+
   return (
+
     <div className="App">
+    <TableContainer/>
+    <h1>The site for cars!</h1>
       <table>
         <thead>
           <tr>
-            <th>Name</th>
-            <th>Address</th>
-            <th>Phone Number</th>
+            <th>practice info</th>
+            <th>car </th>
+            <th>car info</th>
             <th>Email </th>
           </tr>
         </thead>
         <tbody>
-        <tr>
-          <td>Jenny Chan </td>
-          <td>3 waterfoot raod </td>
-          <td>blach balc </td>
-          <td> adsfasdfad </td>
-          </tr>
+       
+        
         </tbody>
       </table>
+
+      <h2> Add a car </h2>
+      <form>
+      <input type="text" name="car" required="required" placeholder="Enter a name..."/>
+      <input type="text" name="phone" required="required" placeholder="enter full..."/>
+      <input type="text" name="id" required="required" placeholder="enter id..."/>
+      <button type="submit">Add </button>
+      </form>
     </div>
   );
 }

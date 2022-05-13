@@ -10,20 +10,15 @@ const [cars, setCars] = useState([]);
       .then(res => res.json())
       .then(
         (result) => {
-          setCars(result.data);
+          console.log(result)// shows the json that is being fetched
+          
+          setCars(result);
+
 
 
         },
       )
   }, [])
   	
- return (
- 		<ul>
- 			{cars.map(cars => (
- 			<li key ={cars.id}>
- 			</li>))}
- 		</ul>
-
- 	)
 }
 
